@@ -1,0 +1,97 @@
+hello rain!
+
+
+#install Git
+	
+	When you use the Git first time at linux you can use the instruction like:
+
+	sudo apt-get install git
+
+
+#add user and email
+	
+	Git describe each as userName and email,so before start you should 'login' user the following instructor:
+
+	git config --global user.name "your name"
+	git config --global user.email "email addr"
+
+	!-Note: use the --global parameter means all the repository will user the name and email
+
+
+
+#mkdir repository
+
+	Use the repository you can manager you file more easy:
+
+	first make the folder: mkdir rain
+	then go into the folder: cd rain
+	next init the folder: git init
+
+
+
+#use git
+	
+!-Key point:
+	Before manager the  project we should know the three concept:
+	
+	--Working Directory: is more near to us,show as the folder
+	--Stage or Index: we can add many file to the stage before we commit
+	--Repository: all the commit version storege in the repository
+
+
+
+	#add the project contains three step:
+		
+		1.modify the file
+		2.git add fileName (add the one or many file to Stage)
+		3.git commit -m "describe this version or how to modify"
+	
+		eache step you can use 'git status' show the status
+	
+	
+	#go into any version
+	
+	there are two instructor support us to time-travel:
+	
+	--git log: show the early version
+	--git reflog: show all version
+	
+	a little different from add,get go into the history version include three grade:
+
+		1.git reset --hard version (you born in the historical version)
+		2.git reset HEAD file (reset the courrent historical background to HEAD) 
+		3.git checkout -- file (you born in courrent historical)
+	
+	#rm the special file:
+
+		1.rm file (rm local file)
+		2.git rm file (ready to rm repository file)
+		3.git commit -m "describe" (update the modify whith the instructor in Stage)
+
+
+#connection to the GitHub
+	
+	when you want to put your file to the GitHub for more person to use,first you should do is to connect to yourself or other person GitHub. but how?
+	
+	1.ssh-keygen -t rse -C "yourEmail@example.com" (create ssh key)
+	2.if success there is a .ssh folder at main catalog and go into the folder
+	3.open the file 'id_rsa.pub' and copy the content
+	4.login GitHub go to the setting/key(SSH and GPG keys) to add the key
+
+#use GitHub repository
+
+	after connection	
+
+
+
+
+
+using :
+	git biff;
+	git add file;
+	git commit  -m "descirbe";
+	git reset --hard version;
+	git reset HEAD "file";
+	git checlout -- file;
+	rm and git rm and git commit -m version;
+	ok;
